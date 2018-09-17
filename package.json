@@ -1,39 +1,38 @@
 {
-  "name": "conduit-node",
-  "version": "1.0.0",
-  "description": "conduit on node",
-  "main": "app.js",
-  "scripts": {
-    "mongo:start": "docker run --name realworld-mongo -p 27017:27017 mongo & sleep 5",
-    "start": "node ./app.js",
-    "dev": "nodemon ./app.js",
-    "stop": "lsof -ti :3000 | xargs kill",
-    "mongo:stop": "docker stop realworld-mongo && docker rm realworld-mongo"
-  },
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "latest",
-    "cors": "latest",
-    "ejs": "latest",
-    "errorhandler": "latest",
-    "express": "latest",
-    "express-jwt": "latest",
-    "express-session": "latest",
-    "jsonwebtoken": "latest",
-    "method-override": "latest",
-    "methods": "latest",
-    "mongoose": "latest",
-    "mongoose-unique-validator": "latest",
-    "morgan": "latest",
-    "passport": "latest",
-    "passport-local": "latest",
-    "request": "latest",
-    "slug": "latest",
-    "underscore": "latest"
-    "underscore": "latest"
-  },
-  "devDependencies": {
-    "newman": "latest",
-    "nodemon": "latest"
-  }
+	"name": "conduit-node",
+	"version": "1.0.0",
+	"description": "conduit on node",
+	"main": "app.js",
+	"scripts": {
+		"mongo:start": "docker run --name realworld-mongo -p 27017:27017 mongo & sleep 5",
+		"start": "node ./app.js",
+		"dev": "nodemon ./app.js",
+		"stop": "lsof -ti :3000 | xargs kill",
+		"mongo:stop": "docker stop realworld-mongo && docker rm realworld-mongo"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"body-parser": "latest",
+		"cors": "latest",
+		"ejs": "latest",
+		"errorhandler": "latest",
+		"express": "latest",
+		"express-jwt": "latest",
+		"express-session": "latest",
+		"jsonwebtoken": "latest",
+		"method-override": "latest",
+		"methods": "latest",
+		"mongoose": "latest",
+		"mongoose-unique-validator": "latest",
+		"morgan": "latest",
+		"passport": "latest",
+		"passport-local": "latest",
+		"request": "latest",
+		"slug": "latest",
+		"underscore": "latest"
+	},
+	"devDependencies": {
+		"newman": "latest",
+		"nodemon": "latest"
+	}
 }
